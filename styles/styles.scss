@@ -10,17 +10,10 @@
 // Responsive VW functions
 $max-breakpoint-xs: 375;
 
-$max-breakpoint-md: 907;
-
 $max-breakpoint-xl: 1440;
 
 @function get-vw-xs($target) {
     $vw-context: ($max-breakpoint-xs*.01) * 1px;
-    @return ($target/$vw-context) * 1vw;
-}
-
-@function get-vw-md($target) {
-    $vw-context: ($max-breakpoint-md*.01) * 1px;
     @return ($target/$vw-context) * 1vw;
 }
 
@@ -52,19 +45,18 @@ $max-breakpoint-xl: 1440;
 
 @mixin responsive($property, $value1, $value2) {
 
-    $getMd: get-vw-md(($value1 + $value2)/2);
-
     #{$property}: get-vw-xs($value1);
 
-    @include min-screen($max-breakpoint-xs+1) {
-        #{$property}: $getMd;
+
+    @include min-screen($max-breakpoint-xs) {
+        #{$property}: $value1;
     }
 
-    @include min-screen($max-breakpoint-md+1) {
+    @include min-screen(768) {
         #{$property}: get-vw-xl($value2);
     }
 
-    @include min-screen($max-breakpoint-xl+1) {
+    @include min-screen($max-breakpoint-xl) {
         #{$property}: $value2;
     }
 
@@ -332,6 +324,7 @@ $Text_Small: 400 14px/24px $webfont2;
     i,
     .swiper-button-prev,
     .swiper-button-next {
+
         @include responsive(width, 48px, 48px);
         @include responsive(height, 48px, 48px);
         border: 1px solid $support-text-color;
@@ -351,8 +344,9 @@ $Text_Small: 400 14px/24px $webfont2;
     .swiper-button-prev,.swiper-button-next{
         @include simple_transition(all 0.3s ease);
         border-color: $cta-color;
-        &::after{
-            color: $cta-color;
+
+        @include max-screen(767){
+            display: none;
         }
 
         @include hover(){
@@ -360,6 +354,10 @@ $Text_Small: 400 14px/24px $webfont2;
             &::after{
                 color: #fff;
             }
+        }
+
+        &::after{
+            color: $cta-color;
         }
     }
 
@@ -438,7 +436,9 @@ $Text_Small: 400 14px/24px $webfont2;
 
     &.right-row {
         @include min-screen(768) {
-            @include responsive(margin-left, 40px, 40px);
+            @include min-screen($max-breakpoint-xl){
+                margin-left: 40px;
+            }
             border-radius: 3px;
             -webkit-box-shadow: 0 20px 40px 0 rgba(#000000, 0.05);
             box-shadow: 0 20px 40px 0 rgba(#000000, 0.05);
@@ -1093,9 +1093,8 @@ body {
     }
 
     .col-md-4 {
-        padding: 0;
-
         @include max-screen(767) {
+            padding: 0;
             display: none;
 
             &:nth-child(2) {
@@ -1103,22 +1102,26 @@ body {
             }
         }
 
-        @include min-screen(768) {
-            max-width: 370px;
+        @include min-screen(768){
+            padding: 0 10px
         }
     }
 
     .press-info {
-        @include responsive(width, 346px, 370px);
-        @include responsive(height, 464px, 464px);
         @include responsive(padding-top, 49px, 49px);
         @include responsive(padding-bottom, 49px, 49px);
         @include responsive(padding-left, 30px, 30px);
         @include responsive(padding-right, 30px, 30px);
+        height: 100%;
+        max-width: 100%;
         margin: 0 auto;
 
-        @include max-screen(991){
-            margin-bottom: 40px;
+        @include max-screen($max-breakpoint-xs){
+            width: get-vw-xs(346px);
+        }
+        
+        @include max-screen(767){
+            width: 346px;
         }
 
         p {
