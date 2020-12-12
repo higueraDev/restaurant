@@ -589,7 +589,7 @@ body {
 
 .hero {
     position: relative;
-    background-image: url('https://higueradave.github.io/restaurant/images/banner-bg.jpg');
+    background-image: url('../images/banner-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -697,7 +697,7 @@ body {
 
             i {
                 &::before {
-                    background-image: url('https://higueradave.github.io/restaurant/images/cutlery-icon.png');
+                    background-image: url('../images/cutlery-icon.png');
                 }
             }
         }
@@ -762,7 +762,7 @@ body {
 
                     i {
                         &::before {
-                            background-image: url('https://higueradave.github.io/restaurant/images/cutlery-icon.png');
+                            background-image: url('../images/cutlery-icon.png');
                         }
                     }
                 }
@@ -1170,7 +1170,7 @@ body {
 
             i {
                 &::before {
-                    background-image: url('https://higueradave.github.io/restaurant/images/chef-icon.png');
+                    background-image: url('../images/chef-icon.png');
                 }
             }
         }
