@@ -475,10 +475,16 @@ $Text_Small: 400 14px/24px $webfont2;
 
 /*========================MAIN==============================*/
 
+html{
+    overflow-x: hidden;
+}
+
 body {
     box-sizing: border-box;
     background: $secondary-color;
     color: $secondary-text-color;
+    width: 100%;
+    overflow: inherit;
 
     h1 {
         font: $H1;

@@ -10,7 +10,7 @@ $(document).ready(function () {
         },
         // Optional parameters
         direction: 'horizontal',
-        loop: false,
+        loop: true,
         // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',

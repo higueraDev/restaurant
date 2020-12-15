@@ -4419,11 +4419,17 @@ body nav .navbar-toggler .swiper-button-next::after,
 }
 
 /*========================MAIN==============================*/
+html {
+  overflow-x: hidden;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #F9F7F2;
   color: #333333;
+  width: 100%;
+  overflow: inherit;
 }
 
 body h1 {
