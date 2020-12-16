@@ -446,6 +446,7 @@ $Text_Small: 400 14px/24px $webfont2;
     }
 }
 
+
 .scrolled {
     @include responsive(width, 176px, 176px);
     @include responsive(height, 176px, 176px);
