@@ -4707,7 +4707,7 @@ body small {
 /*========================Hero Banner Section==============================*/
 .hero {
   position: relative;
-  background-image: url("../images/banner-bg.jpg");
+  background-image: url("https://i.imgur.com/UhOhs5s.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -5029,7 +5029,7 @@ body small {
 }
 
 .history-wrap .history-img .cutlery-wrap i::before {
-  background-image: url("../images/cutlery-icon.png");
+  background-image: url("https://i.imgur.com/2Bfm8tJ.png");
 }
 
 .history-wrap .history-img .scrolled {
@@ -5255,7 +5255,7 @@ body small {
 }
 
 .offers-row .offers-container .offers-wrap .offers-img .cutlery-wrap i::before {
-  background-image: url("../images/cutlery-icon.png");
+  background-image: url("https://i.imgur.com/2Bfm8tJ.png");
 }
 
 .offers-row .offers-container .offers-wrap .offers-info {
@@ -6875,7 +6875,7 @@ body small {
 }
 
 .chef-wrap .chef-img .chef-icon-wrap i::before {
-  background-image: url("../images/chef-icon.png");
+  background-image: url("https://i.imgur.com/mkwobO0.png");
 }
 
 .chef-wrap .chef-img .scrolled {
