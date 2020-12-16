@@ -22,4 +22,3 @@ You can take a look [here](https://higueradev.github.io/restaurant)
 <br>
 
 [![View in Action!](https://i.imgur.com/RckL040.jpg0 "View in Action!")](https://higueradev.github.io/restaurant "View in Action!")
-https://imgur.com/undefined
