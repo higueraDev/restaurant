@@ -15,9 +15,9 @@ You can take a look [here](https://higueradev.github.io/restaurant)
  - PT Serif 
  - Roboto
 - Plugins: 
- - animate.css - <a target="_blank" href="https://animate.style/">Learn more</a>
- - Swipper Slider -  <a target="_blank" href="https://swiperjs.com/get-started/">Learn more</a>
- - Fancybox Gallery - <a target="_blank" href="http://fancyapps.com/fancybox/3/">Learn more</a>
+ - animate.css - <a href="https://animate.style/" target="_blank">Learn more</a>
+ - Swipper Slider -  <a href="https://swiperjs.com/get-started/" target="_blank">Learn more</a>
+ - Fancybox Gallery - <a href="http://fancyapps.com/fancybox/3/" target="_blank">Learn more</a>
 
 <br>
 
